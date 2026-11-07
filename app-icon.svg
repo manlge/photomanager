@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>PhotoManager</title>
+  <desc>蓝绿渐变底色上的叠放照片，照片中有金色太阳和层叠山景。</desc>
+  <defs>
+    <linearGradient id="tile" x1="180" y1="100" x2="830" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#407DF5"/>
+      <stop offset=".5" stop-color="#2462D6"/>
+      <stop offset="1" stop-color="#15999C"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="512" y1="338" x2="512" y2="736" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF5FF"/>
+      <stop offset="1" stop-color="#89D2ED"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="430" y1="520" x2="615" y2="748" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29BCA9"/>
+      <stop offset="1" stop-color="#128A9C"/>
+    </linearGradient>
+    <linearGradient id="foreground" x1="690" y1="537" x2="530" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#216FAE"/>
+      <stop offset="1" stop-color="#154D88"/>
+    </linearGradient>
+    <linearGradient id="back" x1="300" y1="235" x2="720" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#CBE5FF"/>
+    </linearGradient>
+    <filter id="tileShadow" x="-20%" y="-15%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#102D5C" flood-opacity=".22"/>
+    </filter>
+    <filter id="photoShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#0A305F" flood-opacity=".28"/>
+    </filter>
+    <clipPath id="photo"><rect x="240" y="344" width="544" height="392" rx="32"/></clipPath>
+  </defs>
+  <rect x="80" y="80" width="864" height="864" rx="194" fill="url(#tile)" filter="url(#tileShadow)"/>
+  <rect x="81.5" y="81.5" width="861" height="861" rx="192.5" fill="none" stroke="#FFFFFF" stroke-opacity=".18" stroke-width="3"/>
+  <g transform="rotate(-12 512 480)">
+    <rect x="236" y="244" width="552" height="432" rx="52" fill="url(#back)" filter="url(#photoShadow)"/>
+    <rect x="260" y="268" width="504" height="384" rx="30" fill="#73B4EE"/>
+    <path d="M294 304h190" stroke="#D7EDFF" stroke-width="12" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <rect x="216" y="320" width="592" height="440" rx="56" fill="#FFFFFF" filter="url(#photoShadow)"/>
+  <g clip-path="url(#photo)">
+    <rect x="240" y="344" width="544" height="392" fill="url(#sky)"/>
+    <circle cx="642" cy="432" r="42" fill="#FFCA65"/>
+    <path d="M192 754 388 484Q404 462 422 484L648 754Z" fill="url(#mountain)"/>
+    <path d="m374 503 16-21q15-20 32 2l45 54-48-17-23 10Z" fill="#BDF4E4"/>
+    <path d="m424 768 217-222q17-18 34 1l166 182v47Z" fill="url(#foreground)"/>
+    <path d="m620 569 21-23q17-18 34 1l38 42-38-12-19 10-17-23Z" fill="#C5E9F6"/>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PhotoManager 隐私政策 / Privacy Policy">
+<meta name="color-scheme" content="light dark">
+<title>PhotoManager 隐私政策 / Privacy Policy</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;line-height:1.8}
+body{max-width:820px;margin:0 auto;padding:28px 24px 80px;background:Canvas;color:CanvasText;overflow-wrap:anywhere}
+nav{display:flex;gap:24px;padding-bottom:16px;border-bottom:1px solid GrayText}a{color:LinkText}article{scroll-margin-top:20px}article+article{margin-top:64px;border-top:1px solid GrayText;padding-top:32px}h1{font-size:1.8rem}h2{font-size:1.2rem;margin-top:32px}.summary{font-weight:600;padding:18px;border:1px solid GrayText;border-radius:12px}
+</style>
+</head>
+<body>
+<nav aria-label="Language / 语言"><a href="#zh" lang="zh-CN">简体中文</a><a href="#en" lang="en">English</a></nav>
+<article id="zh" lang="zh-CN">
+<h1>PhotoManager 隐私政策</h1>
+<p>更新日期: <time datetime="2026-10-29">2026-10-29</time></p>
+<p class="summary">你的照片在你的设备和 Mac 上处理。PhotoManager 无需注册，不向开发者或第三方服务器上传照片、设备标识或使用记录，不包含广告、统计分析或用户追踪 SDK。</p>
+<section><h2>1. 适用范围与开发者</h2><p>本政策适用于 Mark Liu 开发的 PhotoManager macOS 应用，说明通过 USB 浏览、预览、备份、导出和删除 iPhone 照片及视频时的数据处理方式。应用核心功能和本政策均可离线使用。</p></section>
+<section><h2>2. 在本机处理的数据</h2><p>连接并选择设备后，应用通过 Apple 的 ImageCaptureCore 读取设备名称、设备标识、相册或设备文件路径，以及照片和视频的文件名、大小、创建或修改时间、格式、方向、尺寸和时长等信息，用于显示目录和执行你选择的操作。应用会在 Mac 上生成或下载缩略图、原始文件和转换后的预览。</p>
+<p>原始照片和视频可能包含拍摄位置、拍摄时间、相机信息等内嵌元数据；备份和导出会保留原始文件中的这些信息。应用不会将这些信息用于定位追踪、画像或广告。</p>
+<p>应用使用设备持久标识、设备文件路径和文件版本信息，在本机生成缓存键，以隔离不同设备的照片并在重新连接后复用缓存。该缓存键不用于跨应用追踪，也不会发送给开发者。</p></section>
+<section><h2>3. 权限与用途</h2><p>USB 设备、相机或照片访问权限仅用于发现和访问已连接的设备、读取照片与视频，以及执行你确认的删除操作。导出时，应用通过系统目录选择器访问你选择的保存目录。系统可能要求解锁 iPhone、信任此电脑或授予访问权限。</p>
+<p>你可以拒绝权限、断开设备，或在 macOS“系统设置”的相关隐私与安全性页面管理授权；受影响的功能届时可能不可用。无需提供账号、联系人或付款资料。</p></section>
+<section><h2>4. 缓存、备份和导出的保存期限</h2><p>缩略图、下载原图和转换预览保存在应用的本机缓存目录。应用启动时会尝试清理修改时间超过 7 天的原图及转换预览缓存，并在缩略图超过 5,000 个时按文件修改时间优先清理较旧的文件。清理可能因系统或文件错误未能完成；这不是到期立即删除的保证。断开设备不会立即清除缓存。</p>
+<p>“备份并删除”生成的原始文件、文件清单、校验值和批次信息保存在应用数据目录下的 Backups 文件夹，不属于缓存，也不会按 7 天规则清理。失败或取消任务留下的已完成文件和未完成批次也可能保留，需由你手动管理。</p>
+<p>导出文件保存在你选择的目录中。备份和导出副本会一直保留，直到你自行移除，或由你使用的系统、同步服务等另行管理。若保存目录由 iCloud Drive 或其他同步服务管理，该服务可能按你的设置上传副本。</p></section>
+<section><h2>5. 删除设备照片与清除本地数据</h2><p>仅在你选定照片并确认后，应用才请求删除设备中的照片或视频。“删除”会直接执行永久删除；“备份并删除”或“导出并删除”会先完成所选文件的复制与校验，再启动设备删除。通过设备传输协议执行的删除不会进入 iPhone“最近删除”。设备启用 iCloud 照片时，删除可能同步到 iCloud 和其他设备。</p>
+<p>清空待删除列表只会移除任务选择，不会清除缓存或已经保存的副本。断开设备、删除 iPhone 原件或卸载应用，也不保证移除 Mac 上的缓存、备份和导出文件。</p>
+<p>你可以在应用内的隐私窗口查看当前缓存与备份目录，并通过“打开备份目录”管理备份。手动清除缓存前请退出应用；清除本地备份或导出文件前，请确认仍有需要保留的副本。清除本地文件不会自动删除 iPhone 中的原件。沙盒与非沙盒安装的目录可能不同，以应用内显示的实际路径为准。</p></section>
+<section><h2>6. 数据共享与系统服务</h2><p>PhotoManager 不出售、出租或向开发者及第三方共享你的照片、设备标识或使用记录，不接入远程分析、广告或追踪服务。应用不要求将这些数据发送到开发者服务器。</p>
+<p>Apple 可能独立处理 App Store 分发、系统权限、iCloud 同步以及你启用的系统诊断等信息，这些处理受 Apple 的政策和你的系统设置约束。你主动向支持邮箱提供的信息仅用于处理你的咨询；请勿发送不必要的照片或敏感信息。</p></section>
+<section><h2>7. 本地安全与诊断信息</h2><p>本地文件受 macOS 用户权限、沙盒及你启用的系统磁盘加密设置保护。PhotoManager 不对缓存、备份或导出文件额外加密；原始文件的副本及其清单不应被视为匿名数据。</p>
+<p>连接、传输或删除发生错误时，应用可能向本机进程日志输出错误信息、设备状态、文件路径或条目标识，便于故障排查。应用不会自动把这些诊断信息上传给开发者；如你选择分享日志，请先检查并移除不必要的个人信息。</p></section>
+<section><h2>8. 你的选择与隐私联系</h2><p>你可以停止使用应用、管理系统授权，并自行访问、导出或移除由你控制的本地文件。开发者不持有你的设备照片或本地缓存，无法代为查看、恢复或远程删除这些数据。隐私咨询请联系：<a href="mailto:manlge168@gmail.com">manlge168@gmail.com</a>。</p></section>
+<section><h2>9. 政策更新</h2><p>当数据处理方式变化时，我们会更新本政策及其更新日期。若未来新增上传、统计或其他数据处理功能，将先更新相关说明，并在适用时取得必要授权。</p></section>
+</article>
+<article id="en" lang="en">
+<h1>PhotoManager Privacy Policy</h1>
+<p>Last updated: <time datetime="2026-10-29">2026-10-29</time></p>
+<p class="summary">Your photos are processed on your devices and Mac. PhotoManager requires no account and does not upload photos, device identifiers, or usage records to the developer or third-party servers. It contains no advertising, analytics, or user-tracking SDKs.</p>
+<section><h2>1. Scope and developer</h2><p>This policy applies to the PhotoManager macOS app developed by Mark Liu. It describes data handling when browsing, previewing, backing up, exporting, and deleting iPhone photos and videos over USB. Core functions and this policy are available offline.</p></section>
+<section><h2>2. Data processed locally</h2><p>After you connect and select a device, the app uses Apple&#39;s ImageCaptureCore to read the device name and identifier, album or device file paths, and photo and video metadata such as filenames, sizes, creation or modification times, formats, orientation, dimensions, and duration. This information supports the catalog and your chosen operations. Thumbnails, originals, and converted previews may be generated or downloaded on your Mac.</p>
+<p>Original photos and videos may contain embedded location, capture time, camera, and other metadata. Backups and exports preserve that information in the original files. The app does not use it for location tracking, profiling, or advertising.</p>
+<p>Persistent device identifiers, device file paths, and file version information are used locally to generate cache keys, separate devices&#39; photos, and reuse cached files after reconnection. These keys are not used for cross-app tracking or sent to the developer.</p></section>
+<section><h2>3. Permissions and purposes</h2><p>USB device, camera, or photo access is used to discover and access connected devices, read photos and videos, and perform deletions you confirm. For exports, the system folder picker grants access to the destination you select. You may need to unlock the iPhone, trust the Mac, or grant system permissions.</p>
+<p>You can deny permissions, disconnect a device, or manage authorization in the relevant macOS System Settings privacy and security controls. Affected features may then be unavailable. No account, contacts, or payment details are required.</p></section>
+<section><h2>4. Retention of caches, backups, and exports</h2><p>Thumbnails, downloaded originals, and converted previews are stored in the app&#39;s local cache. At startup, the app attempts to remove original and converted-preview cache files last modified more than seven days ago. When thumbnails exceed 5,000 files, it attempts to remove older files by modification time. System or file errors may prevent cleanup; this is not a guarantee of immediate deletion at expiry. Disconnecting a device does not immediately clear caches.</p>
+<p>Back Up &amp; Delete stores originals, item manifests, checksums, and batch information in the Backups folder within the app&#39;s data directory. Backups are separate from caches and are not subject to the seven-day cleanup. Completed files and incomplete batches from failed or canceled tasks may remain for you to manage manually.</p>
+<p>Exports are saved in your selected folder. Backups and exports remain until you remove them or the system, sync services, or other tools you use manage them. If the selected folder is managed by iCloud Drive or another sync service, that service may upload copies according to your settings.</p></section>
+<section><h2>5. Device deletion and local data removal</h2><p>The app requests deletion of device photos or videos only after you select items and confirm. Delete performs permanent deletion directly. Back Up &amp; Delete and Export &amp; Delete first copy and verify all selected files before starting device deletion. Deletion through the device transfer protocol does not use the iPhone&#39;s Recently Deleted album. With iCloud Photos enabled, deletion may sync to iCloud and other devices.</p>
+<p>Clearing the pending list only removes task selections; it does not clear caches or saved copies. Disconnecting a device, deleting iPhone originals, or uninstalling the app does not guarantee removal of caches, backups, or exports on your Mac.</p>
+<p>The in-app privacy window shows the current cache and backup directories. Open Backup Folder lets you manage backups. Quit the app before manually clearing caches, and ensure you have any needed copies before removing backups or exports. Removing local files does not automatically delete iPhone originals. Sandboxed and non-sandboxed installation paths may differ; use the actual paths displayed in the app.</p></section>
+<section><h2>6. Sharing and system services</h2><p>PhotoManager does not sell, rent, or share photos, device identifiers, or usage records with the developer or third parties. It integrates no remote analytics, advertising, or tracking services and does not require sending this data to a developer server.</p>
+<p>Apple may independently process information for App Store distribution, system permissions, iCloud sync, and system diagnostics you enable, subject to Apple&#39;s policies and your settings. Information you voluntarily send to the support email is used to address your inquiry. Avoid sending unnecessary photos or sensitive information.</p></section>
+<section><h2>7. Local security and diagnostics</h2><p>Local files are protected by macOS user permissions, sandboxing, and system disk encryption when enabled. PhotoManager does not add encryption to caches, backups, or exports. Original-file copies and their manifests should not be considered anonymous data.</p>
+<p>For troubleshooting, connection, transfer, or deletion errors may produce local process logs containing errors, device status, file paths, or item identifiers. The app does not automatically upload these diagnostics to the developer. Review and remove unnecessary personal information before choosing to share logs.</p></section>
+<section><h2>8. Your choices and privacy contact</h2><p>You may stop using the app, manage system permissions, and access, export, or remove local files under your control. The developer does not hold your device photos or local caches and cannot view, restore, or remotely delete them for you. For privacy inquiries, contact <a href="mailto:manlge168@gmail.com">manlge168@gmail.com</a>.</p></section>
+<section><h2>9. Policy changes</h2><p>We will update this policy and its revision date when data handling changes. If future versions introduce uploads, analytics, or other data processing, the relevant disclosures will be updated first and any required authorization obtained.</p></section>
+</article>
+</body>
+</html>
